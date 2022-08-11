@@ -2,12 +2,12 @@ let myflashcards = [
     {
         question: "What animal is this?",
         answer: "Zebra",
-        image: 
+        image: "zebra.jpg"
     },
     {
         question: "What animal is this?",
         answer: "Horse",
-        image:
+        image: 
     },
     {
         question: "What animal is this?",
