@@ -2,17 +2,17 @@ let myflashcards = [
     {
         question: "What animal is this?",
         answer: "Zebra",
-        image: "zebra.jpg"
+        image: 'zebra.jpg'
     },
     {
         question: "What animal is this?",
         answer: "Horse",
-        image: 
+        image: 'horse.jpg'
     },
     {
         question: "What animal is this?",
         answer: "Monkey ",
-        image:
+        image: 'monkey.jpg'
     }]
 
 let i = 0;
@@ -29,6 +29,7 @@ display.addEventListener("click",function(){
 let a='';
 let b='';
 
+
 function update(){
      a=myflashcards[i].question;
      b=myflashcards[i].answer;
@@ -38,12 +39,12 @@ while (i < myflashcards.length){
      a=myflashcards[i].question;
      b=myflashcards[i].answer;
   
-  display.addEventListener("mouseover",function(){
+  display.addEventListener("click",function(){
     update();
     ques.innerHTML = a;
   })
   
-   ques.addEventListener("mouseover",function(){
+   ques.addEventListener("click",function(){
     update();
     ans.innerHTML = b;
     i++;
@@ -51,7 +52,7 @@ while (i < myflashcards.length){
     
   })
  
- next.addEventListener("mouseover",function() {
+ next.addEventListener("click",function() {
     // i++;
     // console.log(i); 
     // a=myflashcards[i].question;
